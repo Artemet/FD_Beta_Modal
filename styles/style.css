@@ -1,0 +1,380 @@
+body {
+    font-family: 'Cera Pro', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0 !important;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* sing_modal_mention */
+.sing_modal_mention {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+    background-color: #5f5e5c4d;
+}
+
+.sing_modal_mention_active {
+    opacity: 1;
+}
+
+.sing_modal_mention .sing_modal_wrapper {
+    width: 100%;
+    margin: auto;
+    top: 20%;
+    position: relative;
+    height: fit-content;
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-top: 24px;
+    max-width: 400px;
+    justify-content: center;
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.039), 0px 10.5px 36px rgba(0, 0, 0, 0.19);
+}
+
+.sing_modal_mention .cross_wrapper {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 14px;
+    right: 25px;
+}
+
+.sing_modal_mention .cross_wrapper svg {
+    transition: 0.5s;
+    cursor: pointer;
+    fill: rgb(242, 73, 65);
+}
+
+.sing_modal_mention .cross_wrapper svg:hover {
+    transform: rotate(180deg);
+}
+
+.sing_modal_mention .design_icon {
+    height: 40px;
+    padding-left: 10px;
+    width: 50px;
+    margin: auto;
+}
+
+.sing_modal_mention .design_icon img {
+    height: 100%;
+}
+
+.sing_modal_mention .text_section{
+    display: grid;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.sing_modal_mention .text_section p {
+    margin: 0;
+    text-align: center;
+}
+
+.sing_modal_mention p.main_text {
+    font-size: 20px;
+}
+
+.sing_modal_mention p.description {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(155, 155, 156);
+    letter-spacing: .7px;
+}
+
+.sing_modal_mention .button_options {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.sing_modal_mention .button_options button.continue {
+    color: white;
+    background-color: rgb(242, 73, 65);
+}
+
+.sing_modal_mention .button_options button.continue:hover {
+    opacity: 0.88;
+}
+
+.sing_modal_mention .button_options button.close {
+    background: none;
+}
+
+.sing_modal_mention .button_options button.close:hover {
+    background: rgb(240, 240, 240);
+}
+
+.sing_modal_mention .button_options button {
+    width: 100%;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    transition: 0.5s;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* sing_modal_mention_media */
+@media only screen and (max-width: 543px) {
+    .sing_modal_mention .sing_modal_wrapper {
+        width: 65vw;
+        max-width: fit-content;
+    }
+}
+
+.custom_modal_background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+    background-color: #5f5e5c4d;
+}
+
+.close_modal_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close_modal_button:hover {
+    color: #ff4b4b;
+}
+
+
+.custom_modal_background_active {
+    opacity: 1;
+}
+
+.custom_modal_wrapper {
+    width: 90%;
+    margin: auto;
+    top: 20%;
+    position: relative;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-top: 24px;
+    max-width: 400px;
+    justify-content: center;
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.039), 0px 10.5px 36px rgba(0, 0, 0, 0.19);
+}
+
+.custom_modal_wrapper h2 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.input_group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 10px 40px 10px 50px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input_group img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+}
+
+.auth_button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff4b4b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.auth-button:hover {
+    background-color: #e04444;
+}
+
+.links {
+    display: grid;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.card_container {
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.new_label {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.heart_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+}
+
+.heart_icon:hover {
+    opacity: 1;
+}
+
+.heart_icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.heart_icon svg.active {
+    fill: #e60000;
+}
+
+.card_content {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 16px 0 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    color: #e60000;
+    font-weight: bold;
+}
+
+.price del {
+    color: #888;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #4caf50;
+    margin-left: 8px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card_content {
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 690px) {
+    .card_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 468px) {
+    .card_container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('Demo_Fonts/Fontspring-DEMO-cerapro-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('Demo_Fonts/Fontspring-DEMO-cerapro-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('Demo_Fonts/Fontspring-DEMO-cerapro-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('Demo_Fonts/Fontspring-DEMO-cerapro-bolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
